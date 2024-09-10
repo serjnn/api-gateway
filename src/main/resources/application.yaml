@@ -1,0 +1,44 @@
+server:
+  port: 8989
+
+
+spring:
+  application:
+    name: GATEWAY
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+          lower-case-service-id: true
+#      routes:
+#        - id: product
+#          uri: lb://product
+#          predicates:
+#            - Path=/product/**
+
+
+
+
+
+#        - id: client
+#          uri: http://localhost:7004
+#          predicates:
+#            - Path=/client/**
+
+
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
+    reactor.netty.http.client: INFO
+    root: INFO
+    com.serjnn: INFO
+
+
+
+
+
+
+
