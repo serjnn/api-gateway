@@ -1997,3 +1997,27 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2024-09-10T13:02:58.072+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-2] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 2024-09-10T13:02:59.223+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-2] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 2024-09-10T13:03:02.624+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-2] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+2024-09-10T13:07:47.912+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:12:47.940+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:17:47.961+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:22:47.987+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:27:48.017+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:32:48.038+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:37:48.056+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:42:48.071+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:47:48.093+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:51:24.424+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-6] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+2024-09-10T13:51:36.574+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-1] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+2024-09-10T13:51:38.171+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-1] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+2024-09-10T13:51:52.173+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-1] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+2024-09-10T13:52:05.265+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-1] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+2024-09-10T13:52:15.067+03:00  INFO 16720 --- [GATEWAY] [reactor-http-nio-1] c.s.a.LoggingGatewayFilterFactory        : zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+2024-09-10T13:52:48.120+03:00  INFO 16720 --- [GATEWAY] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T13:52:53.959+03:00  INFO 16720 --- [GATEWAY] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application GATEWAY with eureka with status DOWN
+2024-09-10T13:52:53.960+03:00  INFO 16720 --- [GATEWAY] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725965573960, current=DOWN, previous=UP]
+2024-09-10T13:52:53.960+03:00  INFO 16720 --- [GATEWAY] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/host.docker.internal:GATEWAY:8989: registering service...
+2024-09-10T13:52:53.970+03:00  INFO 16720 --- [GATEWAY] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/host.docker.internal:GATEWAY:8989 - registration status: 204
+2024-09-10T13:52:56.013+03:00  INFO 16720 --- [GATEWAY] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-09-10T13:52:59.027+03:00  INFO 16720 --- [GATEWAY] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-09-10T13:52:59.044+03:00  INFO 16720 --- [GATEWAY] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/host.docker.internal:GATEWAY:8989 - deregister  status: 200
+2024-09-10T13:52:59.045+03:00  INFO 16720 --- [GATEWAY] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
