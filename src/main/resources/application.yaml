@@ -13,20 +13,11 @@ spring:
           enabled: true
 
           lower-case-service-id: true
-#      routes:
-#        - id: product
-#          uri: lb://product
-#          predicates:
-#            - Path=/product/**
 
 
 
 
 
-#        - id: client
-#          uri: http://localhost:7004
-#          predicates:
-#            - Path=/client/**
 
 
 

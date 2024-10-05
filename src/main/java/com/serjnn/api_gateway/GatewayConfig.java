@@ -23,7 +23,6 @@ public class GatewayConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                // Маршрут для /order/** с прикрепленным фильтром
                 .route("product", r -> r.path("/product/**")
                         .filters(f ->
                                 f.rewritePath("/product(?<segment>/?.*)", "$\\{segment}"))
@@ -58,8 +57,16 @@ public class GatewayConfig {
 
                         .uri("lb://bucket"))
 
+                .route("orchestrator", r -> r.path("/orchestrator/**")
+                        .filters(f -> f.rewritePath("/orchestrator(?<segment>/?.*)", "${segment}")
+                                .dedupeResponseHeader("Access-Control-Allow-Credentials", "RETAIN_UNIQUE")
+                                .dedupeResponseHeader("Access-Control-Allow-Origin", "RETAIN_UNIQUE")
+                                .filter(jwtValidationFilterFactory.apply(new JwtValidationFilterFactory.Config())))
 
-                // Маршрут для /bucket/** с прикрепленным фильтром
+
+                        .uri("lb://orchestrator"))
+
+
 
                 .build();
     }

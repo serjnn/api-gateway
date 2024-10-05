@@ -15,7 +15,6 @@ public class JwtValidationFilterFactory extends AbstractGatewayFilterFactory<Jwt
     private final WebClient webClient;
 
     public static class Config {
-        // Добавьте параметры конфигурации при необходимости
     }
 
     public JwtValidationFilterFactory(WebClient.Builder webClientBuilder) {
@@ -37,8 +36,8 @@ public class JwtValidationFilterFactory extends AbstractGatewayFilterFactory<Jwt
 
             String jwtToken = authHeader.substring(7);
 
-            String validationUrl = "lb://client/api/v1/validate";
-            return webClient.post()
+            String validationUrl = "lb://client/api/v1/secured";
+            return webClient.get()
                     .uri(validationUrl)
                     .header(HttpHeaders.AUTHORIZATION, "Bearer " + jwtToken)
                     .retrieve()
