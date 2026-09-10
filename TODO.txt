@@ -18,7 +18,9 @@ redis:
 
 db: 
     scheduled 
-    transaction timeout 
+    transaction timeout
+
+include db, rest calls and kafka sends to zipkin tracing
     
 some async job with redis distributed lock
 
